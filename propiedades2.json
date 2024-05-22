@@ -1,0 +1,21 @@
+[
+    {
+        "model": "static_pages.propiedad",
+        "pk": 1,
+        "fields": {
+            "nombre": "Casa en el Bosque",
+            "descripcion": "Hermosa casa rodeada de naturaleza.",
+            "m2_construidos": 200,
+            "m2_totales": 500,
+            "estacionamientos": 2,
+            "habitaciones": 4,
+            "banos": 3,
+            "direccion": "Calle del Bosque 123",
+            "comuna": "Santiago",
+            "tipo_inmueble": "Casa",
+            "precio_arriendo": "1500.00",
+            "propietario": 1,
+            "imagen": "img_propiedades/default.jpg"
+        }
+    }
+]

@@ -1,0 +1,234 @@
+Comuna: Chillán
+==================================================
+Nombre: Campo Sereno
+Descripción: Tranquila propiedad en el campo.
+
+
+Comuna: Valparaíso
+==================================================
+Nombre: Casa Familiar
+Descripción: Amplia casa ideal para familias.
+
+Nombre: Loft Bohemio
+Descripción: Loft con estilo bohemio en el corazón de la ciudad.
+
+
+Comuna: Pucón
+==================================================
+Nombre: Casa de Montaña
+Descripción: Casa acogedora en las montañas.
+
+
+Comuna: Viña del Mar
+==================================================
+Nombre: Casa de Playa
+Descripción: Acogedora casa frente al mar.
+
+
+Comuna: Temuco
+==================================================
+Nombre: Casa del Bosque
+Descripción: Encantadora casa rodeada de árboles.
+
+
+Comuna: Puerto Varas
+==================================================
+Nombre: Casa del Lago
+Descripción: Encantadora casa con vista al lago.
+
+
+Comuna: Curicó
+==================================================
+Nombre: Casa del Valle
+Descripción: Casa tranquila rodeada de naturaleza.
+
+
+Comuna: Santiago
+==================================================
+Nombre: Casa en el Bosque
+Descripción: Hermosa casa rodeada de naturaleza.
+
+Nombre: Departamento Centro
+Descripción: Moderno departamento en el corazón de la ciudad.
+
+Nombre: Departamento Ejecutivo
+Descripción: Elegante departamento para ejecutivos.
+
+Nombre: Departamento Ejecutivo
+Descripción: Departamento moderno para ejecutivos.
+
+Nombre: Departamento Estudio
+Descripción: Departamento compacto con diseño moderno.
+
+Nombre: Loft Industrial
+Descripción: Loft con estilo industrial en el centro.
+
+Nombre: Loft Moderno
+Descripción: Estiloso loft con diseño contemporáneo.
+
+
+Comuna: Santiago
+==================================================
+Nombre: Casa en el Bosque
+Descripción: Hermosa casa rodeada de naturaleza.
+
+Nombre: Departamento Centro
+Descripción: Moderno departamento en el corazón de la ciudad.
+
+Nombre: Departamento Ejecutivo
+Descripción: Elegante departamento para ejecutivos.
+
+Nombre: Departamento Ejecutivo
+Descripción: Departamento moderno para ejecutivos.
+
+Nombre: Departamento Estudio
+Descripción: Departamento compacto con diseño moderno.
+
+Nombre: Loft Industrial
+Descripción: Loft con estilo industrial en el centro.
+
+Nombre: Loft Moderno
+Descripción: Estiloso loft con diseño contemporáneo.
+
+
+Comuna: Santiago
+==================================================
+Nombre: Casa en el Bosque
+Descripción: Hermosa casa rodeada de naturaleza.
+
+Nombre: Departamento Centro
+Descripción: Moderno departamento en el corazón de la ciudad.
+
+Nombre: Departamento Ejecutivo
+Descripción: Elegante departamento para ejecutivos.
+
+Nombre: Departamento Ejecutivo
+Descripción: Departamento moderno para ejecutivos.
+
+Nombre: Departamento Estudio
+Descripción: Departamento compacto con diseño moderno.
+
+Nombre: Loft Industrial
+Descripción: Loft con estilo industrial en el centro.
+
+Nombre: Loft Moderno
+Descripción: Estiloso loft con diseño contemporáneo.
+
+
+Comuna: Santiago
+==================================================
+Nombre: Casa en el Bosque
+Descripción: Hermosa casa rodeada de naturaleza.
+
+Nombre: Departamento Centro
+Descripción: Moderno departamento en el corazón de la ciudad.
+
+Nombre: Departamento Ejecutivo
+Descripción: Elegante departamento para ejecutivos.
+
+Nombre: Departamento Ejecutivo
+Descripción: Departamento moderno para ejecutivos.
+
+Nombre: Departamento Estudio
+Descripción: Departamento compacto con diseño moderno.
+
+Nombre: Loft Industrial
+Descripción: Loft con estilo industrial en el centro.
+
+Nombre: Loft Moderno
+Descripción: Estiloso loft con diseño contemporáneo.
+
+
+Comuna: Valparaíso
+==================================================
+Nombre: Casa Familiar
+Descripción: Amplia casa ideal para familias.
+
+Nombre: Loft Bohemio
+Descripción: Loft con estilo bohemio en el corazón de la ciudad.
+
+
+Comuna: Santiago
+==================================================
+Nombre: Casa en el Bosque
+Descripción: Hermosa casa rodeada de naturaleza.
+
+Nombre: Departamento Centro
+Descripción: Moderno departamento en el corazón de la ciudad.
+
+Nombre: Departamento Ejecutivo
+Descripción: Elegante departamento para ejecutivos.
+
+Nombre: Departamento Ejecutivo
+Descripción: Departamento moderno para ejecutivos.
+
+Nombre: Departamento Estudio
+Descripción: Departamento compacto con diseño moderno.
+
+Nombre: Loft Industrial
+Descripción: Loft con estilo industrial en el centro.
+
+Nombre: Loft Moderno
+Descripción: Estiloso loft con diseño contemporáneo.
+
+
+Comuna: Santiago
+==================================================
+Nombre: Casa en el Bosque
+Descripción: Hermosa casa rodeada de naturaleza.
+
+Nombre: Departamento Centro
+Descripción: Moderno departamento en el corazón de la ciudad.
+
+Nombre: Departamento Ejecutivo
+Descripción: Elegante departamento para ejecutivos.
+
+Nombre: Departamento Ejecutivo
+Descripción: Departamento moderno para ejecutivos.
+
+Nombre: Departamento Estudio
+Descripción: Departamento compacto con diseño moderno.
+
+Nombre: Loft Industrial
+Descripción: Loft con estilo industrial en el centro.
+
+Nombre: Loft Moderno
+Descripción: Estiloso loft con diseño contemporáneo.
+
+
+Comuna: Concepción
+==================================================
+Nombre: Loft Urbano
+Descripción: Espacioso loft en el centro de la ciudad.
+
+Nombre: Villa Urbana
+Descripción: Amplia villa en el centro de la ciudad.
+
+
+Comuna: Valdivia
+==================================================
+Nombre: Parcela Campestre
+Descripción: Amplia parcela con vistas panorámicas.
+
+
+Comuna: Los Ángeles
+==================================================
+Nombre: Parcela Rural
+Descripción: Tranquila parcela con amplios espacios.
+
+
+Comuna: Concepción
+==================================================
+Nombre: Loft Urbano
+Descripción: Espacioso loft en el centro de la ciudad.
+
+Nombre: Villa Urbana
+Descripción: Amplia villa en el centro de la ciudad.
+
+
+Comuna: La Serena
+==================================================
+Nombre: Vista al Mar
+Descripción: Espectacular propiedad con vistas al mar.
+
+
