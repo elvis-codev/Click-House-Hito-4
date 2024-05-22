@@ -7,6 +7,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .forms import UserForm
 from .models import Propiedad  
+from django.core.paginator import Paginator
+
 
 def index(request):
     return render(request, 'index.html')
@@ -59,4 +61,7 @@ def cerrar_sesion(request):
 
 def catalogo(request):
     propiedades = Propiedad.objects.all()
-    return render(request, 'catalogo.html', {'propiedades': propiedades})
+    paginator = Paginator(propiedades, 6)  # Muestra 6 propiedades por página
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'catalogo.html', {'page_obj': page_obj})

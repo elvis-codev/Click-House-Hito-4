@@ -187,7 +187,7 @@
                 <div class="tab-content">
                     <div id="tab-1" class="tab-pane fade show p-0 active">
                         <div class="row">
-                            {% for propiedad in propiedades %}
+                            {% for propiedad in page_obj %}
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="property-item rounded overflow-hidden">
                                     <div class="position-relative overflow-hidden">
@@ -231,12 +231,39 @@
                                     </div>
                                 </div>
                             </div>
+                            {% if forloop.counter|divisibleby:3 and not forloop.last %}
+                        </div>
+                        <div class="row">
+                            {% endif %}
                             {% endfor %}
                         </div>
+                        <!-- Pagination -->
+                        <div class="pagination d-flex justify-content-center align-items-center mt-4">
+                            {% if page_obj.has_previous %}
+                            <a class="btn btn-outline-primary me-2"
+                                href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+                            {% endif %}
+
+                            <a class="d-block h5 mb-2 text-center">Página {{ page_obj.number }} de
+                                {{page_obj.paginator.num_pages}}</a>
+
+                            {% if page_obj.has_next %}
+                            <a class="btn btn-outline-primary ms-2"
+                                href="?page={{ page_obj.next_page_number }}">Siguiente</a>
+                            {% endif %}
+                        </div>
+
+
+
+                        <!-- End Pagination -->
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
 
 
 
