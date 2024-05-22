@@ -103,7 +103,7 @@ def editar_perfil(request):
     return render(request, 'registration/editar_perfil.html', {'form': form})
     
 
+
 @login_required
 def mis_propiedades(request):
-    # Filtrar las propiedades por el usuario actualmente autenticado
-    propiedades = Propiedad.objects.filter(propietario=request.user)
+    return render(request, 'registration/mis_propiedades.html')
