@@ -77,4 +77,3 @@ class Comuna(models.Model):
         verbose_name_plural = "Comunas"
         ordering = ["nombre"]
 
-

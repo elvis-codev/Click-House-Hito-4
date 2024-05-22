@@ -8,10 +8,24 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .forms import UserForm
 from .models import Propiedad  
 from django.core.paginator import Paginator
-
+from .forms import CustomUserChangeForm 
 
 def index(request):
-    return render(request, 'index.html')
+    # Obtener todos los objetos de Propiedad
+    propiedades = Propiedad.objects.all()
+
+    # Verificar si se está aplicando un filtro por tipo
+    tipo_filtro = request.GET.get('tipo', None)
+    if tipo_filtro:
+        # Filtrar por el tipo de inmueble seleccionado
+        propiedades = propiedades.filter(tipo_inmueble=tipo_filtro)
+
+    # Paginar los resultados
+    paginator = Paginator(propiedades, 6)  # Muestra 6 propiedades por página
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    return render(request, 'index.html', {'page_obj': page_obj, 'tipo_filtro': tipo_filtro})
 
 
 @login_required
@@ -60,8 +74,30 @@ def cerrar_sesion(request):
 
 
 def catalogo(request):
+    # Obtener todos los objetos de Propiedad
     propiedades = Propiedad.objects.all()
+
+    # Verificar si se está aplicando un filtro por tipo
+    tipo_filtro = request.GET.get('tipo', None)
+    if tipo_filtro:
+        # Filtrar por el tipo de inmueble seleccionado
+        propiedades = propiedades.filter(tipo_inmueble=tipo_filtro)
+
+    # Paginar los resultados
     paginator = Paginator(propiedades, 6)  # Muestra 6 propiedades por página
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
-    return render(request, 'catalogo.html', {'page_obj': page_obj})
+
+    return render(request, 'catalogo.html', {'page_obj': page_obj, 'tipo_filtro': tipo_filtro})
+
+
+@login_required
+def editar_perfil(request):
+    if request.method == 'POST':
+        form = CustomUserChangeForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            return redirect('editar_perfil')
+    else:
+        form = CustomUserChangeForm(instance=request.user)
+    return render(request, 'registration/editar_perfil.html', {'form': form})

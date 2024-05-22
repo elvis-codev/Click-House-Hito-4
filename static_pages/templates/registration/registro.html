@@ -38,6 +38,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
 </head>
 
 <body>
@@ -102,24 +103,49 @@
                 <div class="col-4 py-2"></div>
                 <div class="col-4 py-2 text-center">
                     <h2>Regístrate</h2>
+                    <br>
                     <form method="post">
                         {% csrf_token %}
-                        <div class="form-group py-2">
-                            {{ form.username.label_tag }}
-                            {{ form.username }}
-                            <div class="text-danger">{{ form.username.errors }}</div>
+                        <div class="form-group">
+                            <label for="username">Nombre de usuario:</label>
+                            <input class="form-control form-control-lg" type="text" id="username" name="username"
+                                placeholder="Ingrese su nombre de usuario">
+                            <div class="text-danger">
+                                {% for error in form.username.errors %}
+                                {{ error }}
+                                {% endfor %}
+                            </div>
                         </div>
-                        <div class="form-group py-2">
-                            {{ form.email.label_tag }}
-                            {{ form.email }}
-                            <div class="text-danger">{{ form.email.errors }}</div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input class="form-control form-control-lg" type="email" id="email" name="email"
+                                placeholder="Ingrese su correo electrónico">
+                            <div class="text-danger">
+                                {% for error in form.email.errors %}
+                                {{ error }}
+                                {% endfor %}
+                            </div>
                         </div>
-                        <div class="form-group py-2">
-                            {{ form.password.label_tag }}
-                            {{ form.password }}
-                            <div class="text-danger">{{ form.password.errors }}</div>
+                        <br>
+                        <div class="form-group">
+                            <label for="password">Contraseña:</label>
+                            <input class="form-control form-control-lg" type="password" id="password" name="password"
+                                placeholder="Ingrese su contraseña">
+                            <div class="text-danger">
+                                {% for error in form.password.errors %}
+                                {{ error }}
+                                {% endfor %}
+                            </div>
                         </div>
-                        <div class="form-group py-2">
+                        <br>
+                        <div class="form-group">
+                            <label for="password_confirm">Confirmar contraseña:</label>
+                            <input type="password" class="form-control form-control-lg" name="password_confirm"
+                                placeholder="Confirmar contraseña" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
                             <label for="id_role">Rol:</label>
                             <select name="role" id="id_role" class="form-control">
                                 {% for choice in form.role.field.choices %}
@@ -127,7 +153,10 @@
                                 {% endfor %}
                             </select>
                         </div>
+
+                        <br>
                         <button type="submit" class="btn btn-primary">Registrar</button>
+                        <a href="/" class="btn btn-danger">Cancelar</a>
                     </form>
                 </div>
                 <div class="col-4 py-2"></div>
