@@ -1,9 +1,7 @@
 # Click-House-Hito-4
 
-### Video Demostrativo
-[![Video de ejemplo](https://i9.ytimg.com/vi_webp/PVIO4KjFPW8/mq2.webp?sqp=CNjqvrIG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLBiI3RnC0AN21sKuhZNby7z6K8iNA)](https://www.youtube.com/watch?v=PVIO4KjFPW8)
-
 ------
+## Video Demostrativo - [Enlace del Video](https://www.youtube.com/watch?v=PVIO4KjFPW8)
 ------
 
 ## Página Principal
