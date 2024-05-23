@@ -11,7 +11,7 @@
             "habitaciones": 4,
             "banos": 3,
             "direccion": "Calle del Bosque 123",
-            "comuna": "Santiago",
+            "comuna": 232,
             "tipo_inmueble": "Casa",
             "precio_arriendo": "1500.00",
             "propietario": 1,
@@ -30,10 +30,10 @@
             "habitaciones": 2,
             "banos": 1,
             "direccion": "Avenida Principal 456",
-            "comuna": "Santiago",
+            "comuna": 165,
             "tipo_inmueble": "Departamento",
             "precio_arriendo": "1200.00",
-            "propietario": 2,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -49,10 +49,10 @@
             "habitaciones": 3,
             "banos": 2,
             "direccion": "Avenida del Mar 789",
-            "comuna": "Viña del Mar",
+            "comuna": 28,
             "tipo_inmueble": "Casa",
             "precio_arriendo": "2000.00",
-            "propietario": 3,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -68,10 +68,10 @@
             "habitaciones": 0,
             "banos": 0,
             "direccion": "Camino a la Montaña s/n",
-            "comuna": "Valdivia",
+            "comuna": 76,
             "tipo_inmueble": "Parcela",
             "precio_arriendo": "2500.00",
-            "propietario": 4,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -87,10 +87,10 @@
             "habitaciones": 1,
             "banos": 1,
             "direccion": "Calle Principal 789",
-            "comuna": "Concepción",
+            "comuna": 307,
             "tipo_inmueble": "Departamento",
             "precio_arriendo": "1100.00",
-            "propietario": 5,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -106,10 +106,10 @@
             "habitaciones": 5,
             "banos": 4,
             "direccion": "Avenida del Lago 123",
-            "comuna": "Puerto Varas",
+            "comuna": 186,
             "tipo_inmueble": "Casa",
             "precio_arriendo": "1800.00",
-            "propietario": 6,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -125,10 +125,10 @@
             "habitaciones": 3,
             "banos": 2,
             "direccion": "Calle Ejecutiva 456",
-            "comuna": "Santiago",
+            "comuna": 222,
             "tipo_inmueble": "Departamento",
             "precio_arriendo": "1700.00",
-            "propietario": 7,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -144,10 +144,10 @@
             "habitaciones": 3,
             "banos": 2,
             "direccion": "Camino Rural 789",
-            "comuna": "Chillán",
+            "comuna": 320,
             "tipo_inmueble": "Parcela",
             "precio_arriendo": "2200.00",
-            "propietario": 8,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -163,10 +163,10 @@
             "habitaciones": 4,
             "banos": 3,
             "direccion": "Calle Costanera 123",
-            "comuna": "La Serena",
+            "comuna": 119,
             "tipo_inmueble": "Casa",
             "precio_arriendo": "2500.00",
-            "propietario": 9,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -182,10 +182,10 @@
             "habitaciones": 2,
             "banos": 1,
             "direccion": "Calle Moderna 456",
-            "comuna": "Santiago",
+            "comuna": 295,
             "tipo_inmueble": "Departamento",
             "precio_arriendo": "1600.00",
-            "propietario": 10,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -201,10 +201,10 @@
             "habitaciones": 4,
             "banos": 3,
             "direccion": "Calle del Valle 789",
-            "comuna": "Curicó",
+            "comuna": 241,
             "tipo_inmueble": "Casa",
             "precio_arriendo": "1900.00",
-            "propietario": 11,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -220,10 +220,10 @@
             "habitaciones": 6,
             "banos": 4,
             "direccion": "Avenida Principal 456",
-            "comuna": "Concepción",
+            "comuna": 150,
             "tipo_inmueble": "Casa",
             "precio_arriendo": "2200.00",
-            "propietario": 12,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -239,10 +239,10 @@
             "habitaciones": 2,
             "banos": 2,
             "direccion": "Calle Ejecutiva 789",
-            "comuna": "Santiago",
+            "comuna": 45,
             "tipo_inmueble": "Departamento",
             "precio_arriendo": "1800.00",
-            "propietario": 13,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -258,10 +258,10 @@
             "habitaciones": 5,
             "banos": 3,
             "direccion": "Camino del Bosque 123",
-            "comuna": "Temuco",
+            "comuna": 127,
             "tipo_inmueble": "Casa",
             "precio_arriendo": "2100.00",
-            "propietario": 14,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -277,10 +277,10 @@
             "habitaciones": 0,
             "banos": 0,
             "direccion": "Camino Rural 456",
-            "comuna": "Los Ángeles",
+            "comuna": 52,
             "tipo_inmueble": "Parcela",
             "precio_arriendo": "2300.00",
-            "propietario": 15,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -296,10 +296,10 @@
             "habitaciones": 1,
             "banos": 1,
             "direccion": "Calle Industrial 789",
-            "comuna": "Santiago",
+            "comuna": 203,
             "tipo_inmueble": "Departamento",
             "precio_arriendo": "1400.00",
-            "propietario": 16,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -315,10 +315,10 @@
             "habitaciones": 3,
             "banos": 2,
             "direccion": "Camino de la Montaña 123",
-            "comuna": "Pucón",
+            "comuna": 104,
             "tipo_inmueble": "Casa",
             "precio_arriendo": "2200.00",
-            "propietario": 17,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -334,10 +334,10 @@
             "habitaciones": 1,
             "banos": 1,
             "direccion": "Calle del Estudio 456",
-            "comuna": "Santiago",
+            "comuna": 73,
             "tipo_inmueble": "Departamento",
             "precio_arriendo": "1000.00",
-            "propietario": 18,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -353,10 +353,10 @@
             "habitaciones": 4,
             "banos": 3,
             "direccion": "Calle Familiar 789",
-            "comuna": "Valparaíso",
+            "comuna": 298,
             "tipo_inmueble": "Casa",
             "precio_arriendo": "2300.00",
-            "propietario": 19,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     },
@@ -372,10 +372,10 @@
             "habitaciones": 1,
             "banos": 1,
             "direccion": "Calle Bohemia 123",
-            "comuna": "Valparaíso",
+            "comuna": 341,
             "tipo_inmueble": "Departamento",
             "precio_arriendo": "1300.00",
-            "propietario": 20,
+            "propietario": 1,
             "imagen": "img_propiedades/default.jpg"
         }
     }

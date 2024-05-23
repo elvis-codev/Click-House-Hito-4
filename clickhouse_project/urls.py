@@ -15,6 +15,12 @@ urlpatterns = [
     path('catalogo/', views.catalogo, name='catalogo'),
     path('editar_perfil/', views.editar_perfil, name='editar_perfil'),
     path('mis_propiedades/', views.mis_propiedades, name='mis_propiedades'),
+    path('editar_propiedad/<int:propiedad_id>/', views.editar_propiedad, name='editar_propiedad'),
+    path('eliminar_propiedad/<int:propiedad_id>/', views.eliminar_propiedad, name='eliminar_propiedad'),
+    path('crear_propiedad/', views.crear_propiedad, name='crear_propiedad'),
+
+
+    
 
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

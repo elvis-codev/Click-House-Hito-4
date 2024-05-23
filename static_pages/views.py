@@ -1,14 +1,15 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from django.contrib.auth import login, logout
 from django.contrib.auth.views import LoginView , LogoutView
 from django.contrib.auth.decorators import login_required
 
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from .forms import UserForm
-from .models import Propiedad  
+from .forms import UserForm, CustomUserChangeForm, PropiedadForm, CrearForm
+from .models import Propiedad, Comuna
 from django.core.paginator import Paginator
-from .forms import CustomUserChangeForm 
+from django.contrib import messages
+
 
 def index(request):
     # Obtener todos los objetos de Propiedad
@@ -106,4 +107,76 @@ def editar_perfil(request):
 
 @login_required
 def mis_propiedades(request):
-    return render(request, 'registration/mis_propiedades.html')
+    # Filtrar las propiedades del usuario actualmente autenticado
+    propiedades_usuario = Propiedad.objects.filter(propietario=request.user)
+
+    # Obtener el tipo de filtro actual
+    tipo_filtro = request.GET.get('tipo', None)
+
+    # Aplicar el filtro por tipo si está presente
+    if tipo_filtro:
+        # Filtrar por el tipo de inmueble seleccionado
+        propiedades_usuario = propiedades_usuario.filter(tipo_inmueble=tipo_filtro)
+
+    # Paginar los resultados
+    paginator = Paginator(propiedades_usuario, 6)  # Muestra 6 propiedades por página
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    return render(request, 'registration/mis_propiedades.html', {'page_obj': page_obj, 'tipo_filtro': tipo_filtro})
+
+##################
+
+""" @login_required
+def editar_propiedad(request, propiedad_id):
+    propiedad = get_object_or_404(Propiedad, id=propiedad_id, propietario=request.user)
+    if request.method == 'POST':
+        form = PropiedadForm(request.POST, request.FILES, instance=propiedad)
+        if form.is_valid():
+            form.save()
+            return redirect('mis_propiedades')
+    else:
+        form = PropiedadForm(instance=propiedad)
+    return render(request, 'editar_propiedad.html', {'form': form, 'propiedad': propiedad}) """
+
+@login_required
+def editar_propiedad(request, propiedad_id):
+    propiedad = get_object_or_404(Propiedad, id=propiedad_id, propietario=request.user)
+    if request.method == 'POST':
+        form = PropiedadForm(request.POST, request.FILES, instance=propiedad)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'La propiedad se editó correctamente.')
+            return redirect('mis_propiedades')
+        else:
+            messages.error(request, 'Hubo un error al editar la propiedad. Por favor, corrija los errores.')
+    else:
+        form = PropiedadForm(instance=propiedad)
+    return render(request, 'registration/editar_propiedad.html', {'form': form, 'propiedad': propiedad})
+
+##################
+
+
+@login_required
+def eliminar_propiedad(request, propiedad_id):
+    propiedad = get_object_or_404(Propiedad, id=propiedad_id, propietario=request.user)
+
+    if request.method == 'POST':
+        propiedad.delete()
+        messages.success(request, 'La propiedad se eliminó correctamente.')
+        return redirect('mis_propiedades')
+    else:
+        return redirect('mis_propiedades')
+
+
+@login_required
+def crear_propiedad(request):
+    if request.method == 'POST':
+        form = CrearForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('inicio')  # Redirige a la página de inicio después de guardar la vivienda
+    else:
+        form = CrearForm()
+    return render(request, 'registration/crear_propiedad.html', {'form': form})
+

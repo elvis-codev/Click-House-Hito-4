@@ -1,0 +1,40 @@
+[
+    {
+        "model": "static_pages.propiedad",
+        "pk": 8,
+        "fields": {
+            "nombre": "Campo Sereno",
+            "descripcion": "Tranquila propiedad en el campo.",
+            "m2_construidos": 150,
+            "m2_totales": 1000,
+            "estacionamientos": 4,
+            "habitaciones": 3,
+            "banos": 2,
+            "direccion": "Camino Rural 789",
+            "comuna": 320,
+            "tipo_inmueble": "Parcela",
+            "precio_arriendo": "2200.00",
+            "propietario": 1,
+            "imagen": "img_propiedades/default.jpg"
+        }
+    },
+    {
+        "model": "static_pages.propiedad",
+        "pk": 19,
+        "fields": {
+            "nombre": "Casa Familiar",
+            "descripcion": "Amplia casa ideal para familias.",
+            "m2_construidos": 280,
+            "m2_totales": 700,
+            "estacionamientos": 3,
+            "habitaciones": 4,
+            "banos": 3,
+            "direccion": "Calle Familiar 789",
+            "comuna": 298,
+            "tipo_inmueble": "Casa",
+            "precio_arriendo": "2300.00",
+            "propietario": 1,
+            "imagen": "img_propiedades/default.jpg"
+        }
+    }
+]

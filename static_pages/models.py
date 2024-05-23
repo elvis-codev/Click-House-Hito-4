@@ -33,7 +33,7 @@ class Propiedad(models.Model):
     habitaciones = models.IntegerField()
     banos = models.IntegerField()
     direccion = models.CharField(max_length=200)
-    comuna = models.CharField(max_length=50)
+    comuna = models.ForeignKey('Comuna', on_delete=models.CASCADE)
     TIPO_INMUEBLE_CHOICES = [
         ('Casa', 'Casa'),
         ('Departamento', 'Departamento'),
@@ -41,7 +41,7 @@ class Propiedad(models.Model):
     ]
     tipo_inmueble = models.CharField(max_length=20, choices=TIPO_INMUEBLE_CHOICES)
     precio_arriendo = models.DecimalField(max_digits=10, decimal_places=2)
-    propietario = models.ForeignKey(Usuario, on_delete=models.CASCADE, null=True)
+    propietario = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     imagen = models.ImageField(upload_to='img_propiedades/', null=True, blank=True)
 
 

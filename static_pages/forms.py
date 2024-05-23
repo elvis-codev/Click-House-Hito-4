@@ -1,6 +1,8 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserChangeForm
+from .models import Propiedad
+
 
 class UserForm(forms.ModelForm):
     ROLES = [
@@ -19,8 +21,6 @@ class UserForm(forms.ModelForm):
             'username': 'Alias',
         }
 
-
-
 class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = User
@@ -30,3 +30,23 @@ class CustomUserChangeForm(UserChangeForm):
         super().__init__(*args, **kwargs)
         self.fields['first_name'].widget.attrs['placeholder'] = 'Nombre'
         self.fields['last_name'].widget.attrs['placeholder'] = 'Apellido'
+
+
+
+
+
+
+class PropiedadForm(forms.ModelForm):
+    class Meta:
+        model = Propiedad
+        fields = ['nombre', 'descripcion', 'm2_construidos', 'm2_totales', 'estacionamientos', 
+                  'habitaciones', 'banos', 'direccion', 'comuna', 'tipo_inmueble', 
+                  'precio_arriendo', 'imagen']
+
+
+class CrearForm(forms.ModelForm):
+    class Meta:
+        model = Propiedad  # Cambia 'CrearForm' por el nombre correcto de tu modelo
+        fields = ['nombre', 'descripcion', 'm2_construidos', 'm2_totales', 'estacionamientos', 
+                  'habitaciones', 'banos', 'direccion', 'comuna', 'tipo_inmueble', 
+                  'precio_arriendo', 'imagen']
