@@ -2,6 +2,7 @@
 
 ------
 ## Video Demostrativo - [Enlace del Video](https://www.youtube.com/watch?v=PVIO4KjFPW8)
+## Presentación del Proyecto - [Enlace del la Presentación](https://github.com/elvis-codev/Click-House-Hito-4/blob/main/Presentaci%C3%B3n%20ClickHouse%20Hito%205%20-%20Elvis%20Andrade.pdf)
 ------
 
 ## Página Principal
