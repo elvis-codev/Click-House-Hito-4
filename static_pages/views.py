@@ -45,7 +45,7 @@ def registro(request):
             user.set_password(password)
             user.save()
             login(request, user)
-            return redirect('secreto')
+            return redirect('login')
     else:
         form = UserForm()
 
